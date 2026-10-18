@@ -45,25 +45,29 @@ a {
     background-color: transparent;
 }
 
+
 .background{
     min-height: 100vh;
     background-image: url("cookies.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.welcome {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    color: #fff7e8;
-    background-color: transparent;
+    background-attachment: fixed;
+    z-index: 0;
 }
 
 .welcome h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #fff7e8;
+    background-color: transparent;
     font-size: 64px;
     font-weight: bold;
-    text-align: center;
+    line-height: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
+
 
 .besar{
     display: flex;
