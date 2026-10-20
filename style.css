@@ -4,7 +4,7 @@
     --card-color: #f9d8b9;
 }
 *{
-    background-color: #FFF7E8;
+    background-color: #F9F4EC;
 }
 
 .header {
@@ -72,11 +72,57 @@ a {
 
 .section2 {
     min-height: 80vh;
-    padding-top: 120px;
+}
+
+.besar2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    gap: 60px;
+}
+
+.bungkus-cookiem {
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 25px;
+    border: 2px solid #5C2E16;
+    flex-shrink: 0;
+}
+
+.cookiem {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.cookiem:hover {
+    transform: scale(1.1);
+}
+
+.teks2 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #5C2E16;
+    text-align:left;
+    line-height: 5px;
+}
+
+.teks2 p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #5C2E16;
+    text-align: justify;
+    margin-bottom: 60px;
 }
 
 .section3 {
-    min-height: 80vh;
+    min-height: 100vh;
     padding-top: 120px;
 }
 
@@ -148,8 +194,85 @@ a {
     box-shadow: 0 8px 20px rgba(48, 20, 80, 0.2);
 }
 
-.section3 {
+.section4 {
     min-height: 100vh;
+    padding-top: 120px;
+}
+
+.besar4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4 img {
+    width: 700px;
+}
+
+.section4 p {
+    background-color: transparent;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: #5C2E16;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.footer {
+    background-color: #5C2E16;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px "san-serif";
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer .footer-kiri,
+.footer .footer-tengah,
+.footer .footer-kanan {
+    display: inline-block;
+    vertical-align: top;
+    background-color:transparent;
+}
+
+.footer .footer-kiri {
+    width: 30%;
+}
+
+.footer h3 {
+    color: #f9d8b9;
+    background-color: transparent;
+    margin : 0;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer .footer-kiri img {
+    width: 25%;
+    vertical-align: middle;
+    background-color: transparent;
+}
+
+.footer .footer-kiri .Marketplace {
+    width: 100%;
+    background-color: transparent;
+}
+
+.footer .footer-kiri .footer-tahun {
+    color: #f9d8b9;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 10%;
 }
 
 .a:hover{
