@@ -195,8 +195,9 @@ a {
 }
 
 .section4 {
-    min-height: 100vh;
+    min-height: 80vh;
     padding-top: 120px;
+    
 }
 
 .besar4 {
@@ -221,7 +222,6 @@ a {
 }
 
 footer {
-    position: fixed;
     bottom: 0;
 }
 
@@ -275,9 +275,19 @@ footer {
     padding-top: 10%;
 }
 
-.footer .footer-tengah{
+.footer-tengah{
     width: 35%;
     background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.isi-footer-tengah {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .icon {
@@ -285,16 +295,20 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    line-height: 42px;
+    align-items: center;
     text-decoration: none;
+    gap: 12px;
+    margin-bottom: 20px;
 }
 
 .footer .footer-tengah img {
-    background-color: transparent;
-    width: 38px;
-    height: 38px;
+    background-color: #C58B55;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    border-color: #C58B55;
+    border-color: 1px solid #C58B55;
+    flex-shrink: 0;
+    padding: 5px;
 }
 
 .footer .footer-tengah .icon p {
@@ -302,6 +316,7 @@ footer {
     color:#f9d8b9 ;
     display: inline-block;
     line-height: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
     margin: 0px;
 }
@@ -309,6 +324,60 @@ footer {
 .footer .footer-tengah a:hover {
     color: #ffc188;
     text-decoration: underline;
+}
+
+.footer-kanan {
+    width: 30%;
+}
+
+.footer-about {
+    line-height: 20px;
+    color: #f9d8b9;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: justify;
+    margin: 0;
+    background-color: transparent;
+}
+
+.footer-about span {
+    line-height: 20px;
+    color: #f9d8b9;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: transparent;   
+}
+
+.footer-sosmed {
+    margin-top: 25px;
+}
+
+.medsos-besar {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%;
+    background-color: #5C2E16;
+}
+
+.footer-logo {
+    background-color: transparent;
+}
+
+.img {
+    background-color: #C58B55;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-color: 1px solid #C58B55;
+    flex-shrink: 0;
+    padding: 7px;
+}
+
+.img:hover {
+    background-color: #fdb16a;
 }
 
 .card-container {
