@@ -275,9 +275,42 @@ footer {
     padding-top: 10%;
 }
 
-.a:hover{
-    background-color: #C58B55;
+.footer .footer-tengah{
+    width: 35%;
+    background-color: transparent;
 }
+
+.icon {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    line-height: 42px;
+    text-decoration: none;
+}
+
+.footer .footer-tengah img {
+    background-color: transparent;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border-color: #C58B55;
+}
+
+.footer .footer-tengah .icon p {
+    background-color: transparent;
+    color:#f9d8b9 ;
+    display: inline-block;
+    line-height: normal;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.footer .footer-tengah a:hover {
+    color: #ffc188;
+    text-decoration: underline;
+}
+
 .card-container {
     display: flex;
     flex-direction: row;
