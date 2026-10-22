@@ -152,14 +152,77 @@ a {
     gap: 40px;
 }
 
+.besarr {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width: 100%;
+    gap: 40px;
+}
+
+.besarrr {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width: 100%;
+    gap: 40px;
+}
+
 .card {
     padding-top: 5px;
     border-radius: 35px;
     width: 18%;
     background-color:#F9F4EC;
     border: 2px solid #F9F4EC;
-    height: 390px;
+    height: 400px;
     box-shadow: 0 8px 20px rgba(48, 20, 80, 0.2);
+    transition: box-shadow 0.4s ease, transform 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.besar .card:nth-child(1):hover {
+    box-shadow: 0 12px 30px rgba(190, 115, 55, 0.4);
+}
+
+.besar .card:nth-child(2):hover {
+    box-shadow: 0 12px 30px rgba(190, 125, 55, 0.4);
+}
+
+.besar .card:nth-child(3):hover {
+    box-shadow: 0 12px 30px rgba(180, 35, 45, 0.4);
+}
+
+.besar .card:nth-child(4):hover {
+    box-shadow: 0 12px 30px rgba(110, 145, 65, 0.4);
+}
+
+.besarr .card:nth-child(1):hover {
+    box-shadow: 0 12px 30px rgba(230, 90, 45, 0.4);
+}
+
+.besarr .card:nth-child(2):hover {
+    box-shadow: 0 12px 30px rgba(100, 85, 75, 0.4);
+}
+
+.besarr .card:nth-child(3):hover {
+    box-shadow: 0 12px 30px rgba(40, 150, 220, 0.4);
+}
+
+.besarr .card:nth-child(4):hover {
+    box-shadow: 0 12px 30px rgba(210, 145, 65, 0.4);
+}
+
+.besarrr .card:nth-child(1):hover {
+    box-shadow: 0 12px 30px rgba(105, 135, 65, 0.4);
+}
+
+.besarrr .card:nth-child(2):hover {
+    box-shadow: 0 12px 30px rgba(90, 45, 25, 0.4);
 }
 
 .card h2 {
@@ -172,13 +235,26 @@ a {
     color: #5C2E16;
 }
 
-.foto {
+.bungkus-foto{
     width: 240px;
     height: 240px;
     object-fit: cover;
     border-radius: 35px;
     display: block;
     margin: 0 auto;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.foto:hover {
+    transform: scale(1.1);
 }
 
 .card p {
@@ -187,6 +263,46 @@ a {
     font-size: 14px;
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 14px;
+
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    background-color: transparent;
+}
+
+.card-footer-dalem {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 16px;
+}
+
+.fitur-like {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+
+.fitur-keranjang{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+
+.button {
+    padding: 10px 16px;
+    border-radius: 35px;
+    background-color: #C58B55;
+    color: #F9F4EC;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .card:hover{
