@@ -3,6 +3,11 @@
     --teks-color: #5C2E16;
     --card-color: #f9d8b9;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     background-color: #F9F4EC;
 }
@@ -165,7 +170,7 @@ a {
 
 .section1 span {
     background-color: transparent;
-    color: #C58B55;
+    color: #fdb16a;
     font-weight: bolder;
 }
 
@@ -226,7 +231,6 @@ a {
 
 .section2 {
     min-height: 80vh;
-    background-color: #C58B55;
 }
 
 .besar2 {
