@@ -7,9 +7,28 @@
     background-color: #F9F4EC;
 }
 
+@font-face {
+  font-family: "Oswald";
+  src: url("fonts/Oswald-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("fonts/Oswald-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("fonts/Oswald-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
 .header {
     position: fixed;
     top: 0;
+    z-index: 1000;
 }
 .navbar-logo{
     background-color: transparent;
@@ -31,6 +50,7 @@
     justify-content: space-between;
     gap: 150px;
     padding: 10px 65px;
+    z-index: 1000;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .navbar-list{
@@ -48,16 +68,86 @@ a {
 
 
 .section1{
+    position: relative;
     min-height: 100vh;
-    background-image: url("cookies.jpg");
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #f9d8b9;
+}
+
+.bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.gambar{
+    position: absolute;
+    inset: 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    animation: geser 15s infinite both;
+}
+
+.s1 { animation-delay: -0.9s; }
+.s2 { animation-delay: 4.1s; }
+.s3 { animation-delay: 9.1s; }
+
+
+@keyframes geser {
+    0%{
+        transform: translateX(100%);  animation-timing-function: ease-in-out;
+    }
+    6%{
+        transform: translateX(0);
+    }
+    33.33% { 
+        transform: translateX(0);     animation-timing-function: ease-in-out; 
+    }
+    39.33%  {
+        transform: translateX(-100%); 
+    }
+    39.34%, 100% { 
+        transform: translateX(100%); 
+    }
+}
+
+.lapisan-hytam {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient( 
+        90deg,
+    rgba(40, 18, 3, 0.85) 0%,
+    rgba(60, 28, 5, 0.5) 40%,
+    rgba(60, 28, 5, 0.2) 70%,
+    rgba(60, 28, 5, 0) 100%);
+}
+
+.bungkus-awal {
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    max-width: 480px;
+    margin-left: 7%;
+}
+
+.kata-kata {
+    background-color: transparent;
+    color: #F9F4EC;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: .95;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, .25);
+}
+
+.button-awal {
+    background-color: transparent;
 }
 
 .section1 img {
@@ -79,12 +169,9 @@ a {
     font-weight: bolder;
 }
 
-
-
 .text-animasi {
     background-color: transparent;
     height: 40px;
-    padding: 10px;
     border-radius: 8px;
     display: flex;
     color: #FFF7E8;
@@ -92,10 +179,12 @@ a {
     font-weight: bold;
     font-size: 30px;
     box-sizing: content-box;
+    margin-top: -5px;
 }   
 
 .text-diem {
-    margin-top: -2px;
+    margin-top: 0px;
+    line-height: 40px;
     background-color: transparent;
 }
 
@@ -115,34 +204,29 @@ a {
 }
 
 @keyframes kata-ngulang {
-    10% {
-        transform: translateY(-102%);
+    0%, 15% {
+        transform: translateY(0);
     }
-    25% {
-        transform: translateY(-100%);
+    20%, 35% {
+        transform: translateY(-40px);
     }
-    35% {
-        transform: translateY(-202%);
+    40%, 55% {
+        transform: translateY(-80px);
     }
-    50% {
-        transform: translateY(-200%);
+    60%, 75% {
+        transform: translateY(-120px);
     }
-    60% {
-        transform: translateY(-302%);
-    }
-    75% {
-        transform: translateY(-300%);
-    }
-    85% {
-        transform: translateY(-402%);
+    80%, 95% {
+        transform: translateY(-160px);
     }
     100% {
-        transform: translateY(-400%);
+        transform: translateY(-200px);
     }
 }
 
 .section2 {
     min-height: 80vh;
+    background-color: #C58B55;
 }
 
 .besar2 {
@@ -445,7 +529,8 @@ button {
 }
 
 button:hover {
-    color: #5C2E16;
+    color: #C58B55;
+    background-color: #F9F4EC;
 }
 
 button::before {
