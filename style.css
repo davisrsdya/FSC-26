@@ -4,12 +4,12 @@
     --card-color: #f9d8b9;
 }
 
-html {
-    scroll-behavior: smooth;
+* {
+    background-color: #F9F4EC;
 }
 
-*{
-    background-color: #F9F4EC;
+html {
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -65,6 +65,36 @@ html {
     align-items: center;
     gap: 235px;
 }
+
+.navbar-list a {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-list a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background-color: #F6B77A;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.navbar-list a:hover {
+    color: #F6B77A;
+}
+
+.navbar-list a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
 a {
     text-decoration: none;
     color: #FFF7E8;
@@ -231,6 +261,7 @@ a {
 
 .section2 {
     min-height: 80vh;
+    background-color: #F9F4EC;
 }
 
 .besar2 {
@@ -283,6 +314,7 @@ a {
 .section3 {
     min-height: 100vh;
     padding-top: 120px;
+    background-color: #F9F4EC;
 }
 
 .ourmenu {
@@ -556,6 +588,7 @@ button:hover::before {
 .section4 {
     min-height: 80vh;
     padding-top: 120px;
+    background-color: #F9F4EC;
     
 }
 
